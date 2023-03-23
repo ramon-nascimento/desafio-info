@@ -1,15 +1,14 @@
 import classes from './CarInfo.module.css'
 
 import { Modal } from "../Modal";
+import { Plate } from '../Plate';
 
 export function CarInfo(props) {
   return (
     <Modal onClose={props.onClose}>
       <h3>Informações do Veículo</h3>
 
-      <div className={classes['car']}>
-        <p>{props.car.placa}</p>
-      </div>
+      <Plate placa={props.car.placa} />
 
       <div className={classes['identifier']}>
         <ul>

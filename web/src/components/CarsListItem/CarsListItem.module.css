@@ -3,15 +3,12 @@
   place-items: center;
   justify-content: space-between;
   gap: .5rem;
-  border: 1px solid #FBBB00;
-  border-radius: .2rem;
-  
+  border: 2px solid #FBBB00;
+  border-radius: .3rem;
 }
 
 .item-info {
-  color: #242424;
-  background-color: #FBBB00;
-  padding: .3rem;
+  padding-left: .3rem;
 }
 
 .item-info h4 {

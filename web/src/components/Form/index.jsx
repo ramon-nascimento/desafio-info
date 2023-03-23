@@ -76,7 +76,7 @@ export function Form(props) {
 
         <input 
           type="text" 
-          placeholder='Placa' 
+          placeholder='Placa'           
           minLength={7}
           maxLength={7}
           defaultValue={car.placa} 
@@ -93,8 +93,6 @@ export function Form(props) {
         <input 
           type="number" 
           placeholder='Renavam' 
-          minLength={11}
-          maxLength={11}
           defaultValue={car.renavam} 
           onChange={renavamChangeHandler} 
         />
@@ -107,6 +105,7 @@ export function Form(props) {
         <input 
           type="text" 
           placeholder='Marca' 
+          maxLength={15}
           defaultValue={car.marca} 
           onChange={marcaChangeHandler} 
         />

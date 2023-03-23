@@ -3,6 +3,7 @@ import classes from "./CarsListItem.module.css"
 
 import { CarInfo } from "../CarInfo"
 import { Form } from '../Form'
+import { Plate } from "../Plate"
 
 export function CarsListItem(props) {
   const [selectedCar, setSelectedCar] = useState({})
@@ -34,11 +35,7 @@ export function CarsListItem(props) {
         id={props.car.id}
       >
         <div className={classes["item-info"]}>
-          <h4>{props.car.placa}</h4>
-
-          <div className={classes["item-info__bottom"]}>
-            {props.car.modelo} | {props.car.ano}
-          </div>
+          <Plate placa={props.car.placa} />
         </div>
 
         {props.car.marca}
