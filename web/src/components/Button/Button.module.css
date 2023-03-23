@@ -1,0 +1,18 @@
+.button {
+  height: 40px;
+  width: 100%;
+  background-color: #FBBB00;
+  color: #121212;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  border-radius: .3rem;
+  margin-top: .5rem;
+  opacity: .8;
+  transition: opacity 250ms ease;
+}
+
+.button:hover {
+  opacity: 1;
+}

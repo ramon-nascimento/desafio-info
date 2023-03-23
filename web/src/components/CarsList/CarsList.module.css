@@ -1,0 +1,20 @@
+.car-list {
+  max-height: 15rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  padding-right: .5rem;
+  gap: .5rem;
+}
+
+.car-list::-webkit-scrollbar {
+  width: 5px;
+}
+
+.car-list::-webkit-scrollbar-track {
+  background-color: transparent;
+  width: 20px;
+}
+.car-list::-webkit-scrollbar-thumb {
+  background-color: #FBBB00;
+}

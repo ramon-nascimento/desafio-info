@@ -1,0 +1,52 @@
+.car-list__item {
+  display: flex;
+  place-items: center;
+  justify-content: space-between;
+  gap: .5rem;
+  border: 1px solid #FBBB00;
+  border-radius: .2rem;
+  
+}
+
+.item-info {
+  color: #242424;
+  background-color: #FBBB00;
+  padding: .3rem;
+}
+
+.item-info h4 {
+  border-bottom: 1px solid #242424;
+}
+
+.item-info__bottom {
+  display: flex;
+  font-weight: bold;
+  justify-content: space-around;
+}
+
+.item-actions {
+  display: flex;
+  gap: 1rem;
+  padding: .5rem;
+}
+
+.item-actions button {
+  background-color: #FBBB00;
+  color: #242424;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  opacity: .8;
+  transition: opacity 250ms ease;
+}
+
+.item-actions button:hover {
+  opacity: 1;
+}
+
+.item-actions button:last-child {
+  background-color: #dc3545;
+  color: #e1e1e1;
+}

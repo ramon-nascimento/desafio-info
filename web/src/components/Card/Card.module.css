@@ -1,0 +1,14 @@
+.card {
+  width: 450px;
+  background-color: #242424;
+  color: #e1e1e1;
+  padding: 1rem;
+  border-radius: .3rem;
+}
+
+.card-title {
+  border-bottom: 2px solid #e1e1e1;
+  padding-bottom: .2rem;
+  margin-bottom: .5rem;
+  text-transform: uppercase;
+}
