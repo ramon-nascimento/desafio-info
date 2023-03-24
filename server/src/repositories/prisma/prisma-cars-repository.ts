@@ -7,7 +7,7 @@ export class PrismaCarsRepository implements CarsRepository {
   async create(car: Car): Promise<void> {
     const carExists = this.carAlreadyExists(car.chassi, car.renavam, car.placa)
 
-    if (!carExists) 
+    if (carExists) 
       throw new Error("Veículo já foi cadastrado.")   
 
     try {
