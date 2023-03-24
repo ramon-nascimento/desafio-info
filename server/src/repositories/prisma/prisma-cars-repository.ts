@@ -49,6 +49,8 @@ export class PrismaCarsRepository implements CarsRepository {
 
   // Método para atualizar os dados de um único veículo.
   async update(car: Car): Promise<void> {
+    await this.findById(car.id)
+
     try {
       await prisma.car.update({
         where: {
@@ -65,7 +67,7 @@ export class PrismaCarsRepository implements CarsRepository {
         }
       })
     } catch (error) {
-      throw new Error("Veículo não encontrado na base de dados.")
+      throw new Error("Chassi e/ou renavam já existentes.")
     }
   }
 
