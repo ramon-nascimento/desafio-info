@@ -15,7 +15,7 @@ describe('Caso de Uso - CreateCar', () => {
         marca: 'teste',
         modelo: 'teste',
         placa: 'teste',
-        renavam: 1
+        renavam: 123456789
       })
     }).to.not.throw()
   })

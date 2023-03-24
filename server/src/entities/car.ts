@@ -16,6 +16,15 @@ export class Car {
         throw new Error("Não é permitido a criação de um veículo com campos vazios.")
       }
     }
+
+    if (props.ano > 9999) 
+      throw new Error("Ano do veículo inválido.")
+
+    if (props.renavam.toString().length !== 9)
+      throw new Error("Tamanho do renavam inválido. (9 caracteres)")
+
+    if (props.chassi.length < 17) 
+      throw new Error("Tamanho do chassi inválido. (17 caracteres)")
     
     if (!id) {
       this.id = v4()

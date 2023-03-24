@@ -1,5 +1,6 @@
 import { Car } from "../entities/car";
 
+// 'contrato' que define os métodos do repositório
 export interface CarsRepository {
   create(car: Car): Promise<void>;
   getAll(): Promise<Array<Object>>;

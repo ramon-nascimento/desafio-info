@@ -36,7 +36,7 @@ export class UpdateCarController {
 
       return response.status(201).send()
     } catch (error) {
-      return response.status(401).json({
+      return response.status(404).json({
         error: error.message || "Erro inesperado ocorreu."
       })
     }

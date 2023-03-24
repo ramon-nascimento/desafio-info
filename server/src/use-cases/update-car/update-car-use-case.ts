@@ -13,10 +13,19 @@ export class UpdateCarUseCase {
    * @param {UpdateCarRequestDTO} objeto Car
    */
   async execute(car: UpdateCarRequestDTO): Promise<UpdateCarResponseDTO> {
+    if (car.ano > 9999) 
+      throw new Error("Ano do veículo inválido.")
+
+    if (car.renavam.toString().length !== 9)
+      throw new Error("Tamanho do renavam inválido. (9 caracteres)")
+
+    if (car.chassi.length < 17) 
+      throw new Error("Tamanho do chassi inválido. (17 caracteres)")
+      
     try {
       await this.carsRepository.update(car)
     } catch (error) {
-      throw new Error("Veículo não encontrado na base de dados.")
+      throw new Error(error)
     }
   }
 }

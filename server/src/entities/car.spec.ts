@@ -6,14 +6,14 @@ describe('Entidade - Carro', () => {
   it('deverá instanciar um novo veículo', () => {
     const car = new Car({
       ano: 2014,
-      chassi: "AAA01",
+      chassi: "9BM30123456789KB3",
       marca: "FIAT",
       modelo: "V1",
       placa: "QQX3008",
-      renavam: 1010
+      renavam: 123456789
     })
 
-    expect(car).to.be.instanceOf(Car);
+    expect(car).to.be.instanceOf(Car)
     expect(car.ano).to.be.equal(2014)
   })
 
